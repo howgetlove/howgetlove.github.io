@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="head">
+        <img src="getlove.png" alt="" class="logo" width="200px">
+    </header>
+
+    <div>
+        <br>
+        <p class="title-info">
+            Certifique-se de que seu áudio esteja ativado
+        </p>
+
+        <p class="sub-info">
+            <span id="watch-counter"></span> pessoas estão assistindo, então talvez leve mais de 10 segundos para o vídeo carregar
+        </p>
+
+        <br><br>
+
+        <div id="video-box">
+            <iframe 
+            width="672"
+            height="378"
+            src="https://www.youtube-nocookie.com/embed/QBHbjGAJB1E?controls=0&autoplay=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="autoplay"></iframe>
+        </div>
+        
+        <div class="button-box">
+            <div class="sub-box">
+                <a class="cart-button" href="https://ssl.clickbank.net/order/orderform.html?time=1679243965&vvvv=686973736563726574&vtid=lp0&cbskin=17913&cbexit=1105&cbfid=4B8r3B4p7yhRXuBWLqsQ546WR43cqQwrbXMDFnBi6vSJBeif8tPW85a7r7DM961Jvk4hdryZoByEp8GC8HzsqJpRN4FxGM926sid%3Dnotime%26vtid%3Dlp0%26cbexit%3D1105&oaref=01.89576444810781095BAEF7E8C8354654F3D360B7E6A16DCA63ADF5A233D2F859304822A0&corid=32028dc2-e119-4ad7-87ce-383bc8520ae3">Adicionar ao Carrinho</a>
+                <br><br><br>
+                <img src="cartoes.png" alt="" width="300px" class="cartoes">
+
+                <br><br><br><br><br>
+                <img src="selo.png" alt="" width="170" class="garantia">
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            border: 0;
+            margin: 0;
+            background: url(romantic.jpg);
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background-color: #d4d4d417;
+        }
+
+        #head {
+            background-color: #EA5455;
+            height: 100px;
+            margin: 0 auto;
+            border-bottom: 0px solid #EA5455;
+            overflow: hidden;
+        }
+
+        #head img {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: -50px;
+        }
+
+        .title-info {
+            text-align: center;
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .sub-info {
+            font-size: 19px;
+            font-family: 400;
+            text-align: center;
+        }
+
+        .sub-info, .title-info {
+            padding: initial 20%;
+        }
+
+        #video-box {
+            text-align: center;
+        }
+
+        .sub-box {
+            background-color: #fff;
+            width: 672px;
+            margin: 0 auto;
+            margin-top: -4px;
+            height: 420px;
+            text-align: center;
+            position: relative;
+        }
+
+        .cart-button {
+            background: rgb(238, 138, 45);
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 20px 100px;
+            font-size: 24px;
+            display: inline-block;
+            margin-top: 30px;
+            border: 0;
+            /* border-bottom: 5px solid #002B5B; */
+            border-bottom: 5px solid rgb(204, 115, 32);
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cart-button:hover {
+            padding: 23px 100px 20px 100px;
+            border-bottom: 3px solid rgb(204, 115, 32);
+        }
+
+        .cartoes {
+            position: absolute;
+            top: 135px;
+            left: 50%;
+            margin-left: -150px;
+        }
+
+        .garantia {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            margin-left: -85px;
+        }
+    </style>
+
+    <script>
+        function gerarNumeroAleatorio(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        let numeroAleatorio = gerarNumeroAleatorio(461, 493);
+
+        let elementoSpan = document.getElementById('watch-counter');
+        elementoSpan.textContent = numeroAleatorio;
+    </script>
+</body>
+</html>
